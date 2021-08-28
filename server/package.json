@@ -1,0 +1,32 @@
+{
+  "name": "buffy-api",
+  "version": "1.0.0",
+  "description": "Buffy API",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "author": "COURTNEY DOWNS",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.19.4",
+    "sequelize-cli": "^6.2.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "docker": "^1.0.0",
+    "dotenv": "^8.6.0",
+    "express": "^4.17.1",
+    "http-server": "^0.12.3",
+    "pg": "^8.7.1",
+    "pg-hstore": "^2.3.4",
+    "postgresql": "0.0.1",
+    "sequelize": "^5.22.4",
+    "uuid": "^8.3.2",
+    "yaml": "^1.10.2",
+    "yamljs": "^0.3.0"
+  }
+}
