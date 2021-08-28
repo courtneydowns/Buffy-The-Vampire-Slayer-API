@@ -1,8 +1,8 @@
 require("dotenv").config();
 let express = require("express");
 let app = express();
-let sequelize = require("./db");
-let episode = require("./controllers/episodeController");
+let sequelize = require("./server/db");
+let episode = require("./server/controllers/episodeController");
 const port = process.env.PORT || 3000;
 const path = require("path");
 
