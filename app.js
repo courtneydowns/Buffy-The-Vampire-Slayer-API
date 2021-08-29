@@ -2,14 +2,14 @@ require("dotenv").config();
 let express = require("express");
 let app = express();
 let sequelize = require("./db");
-let episode = require("./server/controllers/episodeController");
+let episode = require("./controllers/episodeController");
 const port = process.env.PORT || 3000;
 const path = require("path");
 
 sequelize.sync();
 
 app.get("/", function (req, res) {
-  res.sendFile(path.join(__dirname, "./client/index.html"));
+  res.sendFile(path.join(__dirname, "./index.html"));
 });
 
 app.use(express.json());
